@@ -1,0 +1,535 @@
+﻿<Page
+    x:Class="AdvComProject.GradeCal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AdvComProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" ></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <ComboBox
+    		x:Name="credit7"
+    		Grid.Row="9"
+    		Grid.Column="1"
+    		Grid.RowSpan="4"
+    		Background="Black"
+    		BorderBrush="Black"
+            Visibility="Collapsed">
+            <ComboBoxItem Content="     1" Foreground="DeepSkyBlue" IsSelected="True" />
+            <ComboBoxItem Content="     2" Foreground="DeepSkyBlue"/>
+            <ComboBoxItem Content="     3" Foreground="DeepSkyBlue"/>
+        </ComboBox>
+        <TextBlock
+    		Text="Subject"
+    		Grid.Row="2"
+    		VerticalAlignment="Center"
+    		HorizontalAlignment="Center"
+    		FontSize="20"
+    		Foreground="DeepSkyBlue"
+    		FontWeight="SemiBold"/>
+        <TextBlock
+    		Text="credit"
+    		Grid.Row="2"
+    		Grid.Column="1"
+    		VerticalAlignment="Center"
+    		HorizontalAlignment="Center"
+    		FontSize="20"
+    		Foreground="DeepSkyBlue"
+    		FontWeight="SemiBold"
+            />
+        <TextBlock
+    		Text="Grade"
+    		FontSize="20"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Foreground="DeepSkyBlue"
+    		Grid.Row="2"
+    		Grid.Column="2"
+    		FontWeight="SemiBold"/>
+
+        <TextBlock
+    		Text="Equiv."
+    		FontSize="20"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="2"
+    		Grid.Column="3"
+    		Foreground="DeepSkyBlue"
+    		FontWeight="SemiBold"
+            />
+        <TextBox x:ConnectionId='1'
+            x:Name="subject1"
+    		Text="Add sub.+"
+                                             
+            
+    		FontSize="24"
+    		BorderBrush="Black"
+    		Grid.Row="3"
+    		TextAlignment="Center"
+    		Background="Black"
+    		Foreground="Wheat"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		FontWeight="SemiBold" 
+            Height="42" 
+            Margin="2,8,4,0" 
+            Width="144" 
+            
+            />
+
+        <TextBlock
+    		Grid.Row="1"
+    		Grid.ColumnSpan="3"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		FontSize="36"
+    		Foreground="DeepSkyBlue" Margin="20,17,40.667,26" Grid.RowSpan="2"
+            >
+        	<Run Text="grade calculator"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+
+
+
+        <ComboBox x:ConnectionId='2'
+    		x:Name="grade1"
+    		Grid.Row="3"
+    		Grid.Column="2"
+    		Grid.RowSpan="5"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Foreground="Black" 
+    		                                >
+            <ComboBoxItem x:Name="Item1" Content="     A" IsSelected="True"/>
+            <ComboBoxItem Content="     B+" x:Name="Item2"/>
+            <ComboBoxItem Content="     B" x:Name="Item3"/>
+            <ComboBoxItem Content="     C+" x:Name="Item4"/>
+            <ComboBoxItem Content="     C" x:Name="Item5"/>
+            <ComboBoxItem Content="     D+" x:Name="Item6"/>
+            <ComboBoxItem Content="     D" x:Name="Item7"/>
+            <ComboBoxItem Content="     F" x:Name="Item8"/>
+        </ComboBox>
+
+        <ComboBox x:ConnectionId='3'
+    		x:Name="grade4"
+    		Grid.Row="6"
+    		Grid.Column="2"
+    		Grid.RowSpan="5"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Foreground="Black"
+            Visibility="Collapsed"
+    		                               >
+            <ComboBoxItem x:Name="Item31" Content="     A" IsSelected="True" />
+            <ComboBoxItem x:Name="Item32" Content="     B+"/>
+            <ComboBoxItem x:Name="Item33" Content="     B"/>
+            <ComboBoxItem x:Name="Item34" Content="     C+"/>
+            <ComboBoxItem x:Name="Item35" Content="     C"/>
+            <ComboBoxItem x:Name="Item36" Content="     D+"/>
+            <ComboBoxItem x:Name="Item37" Content="     D"/>
+            <ComboBoxItem x:Name="Item38" Content="     F"/>
+        </ComboBox>
+
+        <ComboBox x:ConnectionId='4'
+    		x:Name="grade3"
+    		Grid.Row="5"
+    		Grid.Column="2"
+    		Grid.RowSpan="5"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Foreground="Black"
+            Visibility="Collapsed"
+    		                               >
+
+            <ComboBoxItem x:Name="Item21" Content="     A"  IsSelected="True"/>
+            <ComboBoxItem x:Name="Item22" Content="     B+"/>
+            <ComboBoxItem x:Name="Item23" Content="     B"/>
+            <ComboBoxItem x:Name="Item24" Content="     C+"/>
+            <ComboBoxItem x:Name="Item25" Content="     C"/>
+            <ComboBoxItem x:Name="Item26" Content="     D+"/>
+            <ComboBoxItem x:Name="Item27" Content="     D"/>
+            <ComboBoxItem x:Name="Item28" Content="     F"/>
+        </ComboBox>
+
+        <ComboBox x:ConnectionId='5'
+    		x:Name="grade2"
+    		Grid.Row="4"
+    		Grid.Column="2"
+    		Grid.RowSpan="5"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Foreground="Black"
+            Visibility="Collapsed"
+    		                               
+            >
+            <ComboBoxItem x:Name="Item11" Content="     A" IsSelected="True"/>
+            <ComboBoxItem x:Name="Item12" Content="     B+"/>
+            <ComboBoxItem x:Name="Item13" Content="     B"/>
+            <ComboBoxItem x:Name="Item14" Content="     C+"/>
+            <ComboBoxItem x:Name="Item15" Content="     C"/>
+            <ComboBoxItem x:Name="Item16" Content="     D+"/>
+            <ComboBoxItem x:Name="Item17" Content="     D"/>
+            <ComboBoxItem x:Name="Item18" Content="     F"/>
+        </ComboBox>
+
+        <ComboBox x:ConnectionId='6'
+    		x:Name="grade5"
+    		Grid.Row="7"
+    		Grid.Column="2"
+    		Grid.RowSpan="5"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Foreground="Black"
+            Visibility="Collapsed"
+    		                               
+            >
+
+            <ComboBoxItem x:Name="Item41" Content="     A"  IsSelected="True"/>
+            <ComboBoxItem x:Name="Item42" Content="     B+"/>
+            <ComboBoxItem x:Name="Item43" Content="     B"/>
+            <ComboBoxItem x:Name="Item44" Content="     C+"/>
+            <ComboBoxItem x:Name="Item45" Content="     C"/>
+            <ComboBoxItem x:Name="Item46" Content="     D+"/>
+            <ComboBoxItem x:Name="Item47" Content="     D"/>
+            <ComboBoxItem x:Name="Item48" Content="     F"/>
+        </ComboBox>
+
+        <ComboBox x:ConnectionId='7'
+    		x:Name="grade6"
+    		Grid.Row="8"
+    		Grid.Column="2"
+    		Grid.RowSpan="5"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Foreground="Black"
+    		                               
+    		Visibility="Collapsed"
+            >
+
+            <ComboBoxItem x:Name="Item51" Content="     A"  IsSelected="True"/>
+            <ComboBoxItem x:Name="Item52" Content="     B+"/>
+            <ComboBoxItem x:Name="Item53" Content="     B"/>
+            <ComboBoxItem x:Name="Item54" Content="     C+"/>
+            <ComboBoxItem x:Name="Item55" Content="     C"/>
+            <ComboBoxItem x:Name="Item56" Content="     D+"/>
+            <ComboBoxItem x:Name="Item57" Content="     D"/>
+            <ComboBoxItem x:Name="Item58" Content="     F"/>
+        </ComboBox>
+        <ComboBox x:ConnectionId='8'
+    		x:Name="grade7"
+    		Grid.Row="9"
+    		Grid.Column="2"
+    		Grid.RowSpan="5"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Foreground="Black"
+            Visibility="Collapsed"
+                                           
+           
+            >
+
+            <ComboBoxItem x:Name="Item61" Content="     A"  IsSelected="True"/>
+            <ComboBoxItem x:Name="Item62" Content="     B+"/>
+            <ComboBoxItem x:Name="Item63" Content="     B"/>
+            <ComboBoxItem x:Name="Item64" Content="     C+"/>
+            <ComboBoxItem x:Name="Item65" Content="     C"/>
+            <ComboBoxItem x:Name="Item66" Content="     D+"/>
+            <ComboBoxItem x:Name="Item67" Content="     D"/>
+            <ComboBoxItem x:Name="Item68" Content="     F"/>
+        </ComboBox>
+
+        <TextBox x:ConnectionId='9'
+            x:Name="subject2"
+    		Text="Circuit lab"
+    		FontSize="24"
+    		Foreground="Wheat"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Grid.Row="4"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		FontWeight="SemiBold" 
+            Height="40" 
+            Margin="10,8,0,2" 
+            Width="140"
+                                             
+            Visibility="Collapsed"
+            />
+
+        <TextBox x:ConnectionId='10'
+            x:Name="subject3"
+    		Text="Adv. Math"
+    		Foreground="Wheat"
+    		Background="Black"
+    		BorderBrush="Black"
+    		FontSize="24"
+    		Grid.Row="5"
+            Visibility="Collapsed"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+                                             
+    		FontWeight ="SemiBold" Margin="10,0,0,0" Width="140" Height="50"/>
+
+        <TextBox x:ConnectionId='11'
+            x:Name="subject4"
+    		Text="  Adv. Com"
+    		Foreground="Wheat"
+    		Background="Black"
+    		BorderBrush="Black"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Bottom"
+    		FontSize="24"
+            Visibility="Collapsed"
+                                             
+    		FontWeight="SemiBold"
+    		Grid.Row="6" Margin="2,0,4,0" Height="50" Width="144"
+            />
+        <TextBox x:ConnectionId='12'
+    		x:Name="addsubject1"
+    		Grid.Row="7"
+    		Foreground="Wheat"
+            
+    		Text="Add sub.+ "
+    		Background="Black"
+    		BorderBrush="Black"
+    		TextAlignment="Center"
+    		FontWeight="SemiBold"
+    		FontSize="24"
+            Visibility="Collapsed"
+                                                 
+            Height="53" Grid.RowSpan="2"
+            />
+
+        <TextBox x:ConnectionId='13'
+    		x:Name="addsubject2"
+    		Grid.Row="8"
+    		Foreground="Wheat"
+    		Text="Add sub.+ "
+    		Background="Black"
+    		BorderBrush="Black"
+    		TextAlignment="Center"
+    		FontSize="24"
+    		FontWeight="SemiBold"
+    		Visibility="Collapsed"
+                                                
+            />
+        <TextBox
+    		x:Name="addsubject3"
+    		Grid.Row="9"
+    		Foreground="Wheat"
+    		Text="Add sub.+ "
+    		Background="Black"
+    		BorderBrush="Black"
+            Visibility="Collapsed"
+    		TextAlignment="Center"
+    		FontSize="24"
+    		FontWeight="SemiBold" Height="59" Grid.RowSpan="2"
+            />
+
+        <TextBlock
+    		x:Name="equiv1"
+    		Text="4.0"
+    		FontSize="24"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="3"
+    		Grid.Column="3"
+            />
+        <TextBlock
+    		x:Name="equiv7"
+    		Text="4.0"
+    		FontSize="24"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="9"
+    		Grid.Column="3"
+            Visibility="Collapsed"
+            />
+        <TextBlock
+    		x:Name="equiv2"
+    		Text="4.0"
+    		FontSize="24"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="4"
+    		Grid.Column="3"
+            Visibility="Collapsed"
+            />
+        <TextBlock
+    		x:Name="equiv3"
+    		Text="4.0"
+    		FontSize="24"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="5"
+    		Grid.Column="3"
+            Visibility="Collapsed"
+            />
+        <TextBlock
+    		x:Name="equiv4"
+    		Text="4.0"
+    		FontSize="24"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="6"
+            Visibility="Collapsed"
+    		Grid.Column="3"
+            />
+        <TextBlock
+    		x:Name="equiv5"
+    		Text="4.0"
+    		FontSize="24"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="7"
+            Visibility="Collapsed"
+    		Grid.Column="3"
+            />
+        <TextBlock
+    		x:Name="equiv6"
+    		Text="4.0"
+    		FontSize="24"
+    		HorizontalAlignment="Center"
+    		VerticalAlignment="Center"
+    		Grid.Row="8"
+    		Grid.Column="3"
+    		Visibility="Collapsed"
+            />
+        <ComboBox
+    		x:Name="credit6"
+    		Grid.Row="8"
+    		Grid.Column="1"
+    		Grid.RowSpan="4"
+    		Background="Black"
+    		BorderBrush="Black"
+    		Visibility="Collapsed">
+            <ComboBoxItem Content="     1" Foreground="DeepSkyBlue" IsSelected="True" />
+            <ComboBoxItem Content="     2" Foreground="DeepSkyBlue"/>
+            <ComboBoxItem Content="     3" Foreground="DeepSkyBlue"/>
+        </ComboBox>
+        <ComboBox
+    		x:Name="credit5"
+    		Grid.Row="7"
+    		Grid.Column="1"
+    		Grid.RowSpan="4"
+    		Background="Black"
+    		BorderBrush="Black"
+            Visibility="Collapsed">
+            <ComboBoxItem Content="     1" Foreground="DeepSkyBlue" IsSelected="True" />
+            <ComboBoxItem Content="     2" Foreground="DeepSkyBlue"/>
+            <ComboBoxItem Content="     3" Foreground="DeepSkyBlue"/>
+        </ComboBox>
+        <ComboBox
+    		x:Name="credit4"
+    		Grid.Row="6"
+    		Grid.Column="1"
+    		Grid.RowSpan="4"
+    		Background="Black"
+    		BorderBrush="Black"
+            Visibility="Collapsed">
+            <ComboBoxItem Content="     1" Foreground="DeepSkyBlue" IsSelected="True" />
+            <ComboBoxItem Content="     2" Foreground="DeepSkyBlue"/>
+            <ComboBoxItem Content="     3" Foreground="DeepSkyBlue"/>
+        </ComboBox>
+        <ComboBox
+    		x:Name="credit3"
+    		Grid.Row="5"
+    		Grid.Column="1"
+    		Background="Black"
+    		BorderBrush="Black" 
+            Grid.ColumnSpan="2" 
+            Margin="1,2,82.667,-152"
+            Visibility="Collapsed">
+            <ComboBoxItem Content="     1" Foreground="DeepSkyBlue" IsSelected="True" />
+            <ComboBoxItem Content="     2" Foreground="DeepSkyBlue"/>
+            <ComboBoxItem Content="     3" Foreground="DeepSkyBlue"/>
+        </ComboBox>
+        <ComboBox
+    		x:Name="credit2"
+    		Grid.Row="4"
+    		Grid.Column="1"
+    		Grid.RowSpan="4"
+    		Background="Black"
+    		BorderBrush="Black"
+            Visibility="Collapsed">
+            <ComboBoxItem Content="     1" Foreground="DeepSkyBlue" IsSelected="True" />
+            <ComboBoxItem Content="     2" Foreground="DeepSkyBlue"/>
+            <ComboBoxItem Content="     3" Foreground="DeepSkyBlue"/>
+        </ComboBox>
+        <ComboBox
+    		x:Name="credit1"
+    		Grid.Row="3"
+    		Grid.Column="1"
+    		Grid.RowSpan="4"
+    		Background="Black"
+    		BorderBrush="Black" Margin="0,0,0.333,0" >
+            <ComboBoxItem Content="     1" Foreground="DeepSkyBlue" IsSelected="True" />
+            <ComboBoxItem Content="     2" Foreground="DeepSkyBlue"/>
+            <ComboBoxItem Content="     3" Foreground="DeepSkyBlue"/>
+        </ComboBox>
+
+        <TextBlock
+            Text="Average grade:"
+            FontWeight="SemiBold"
+            VerticalAlignment="Center"
+            FontSize="20"
+            Grid.Row="10"
+            Grid.ColumnSpan="3" Margin="16,23,68,62" Height="25" Grid.Column="1"
+          
+            />
+        <TextBox
+            x:Name="avggrade"
+            Grid.Row="10"
+            Background="Black"
+            BorderBrush="Black"
+            Foreground="White"
+            Text="0.00"
+            TextAlignment="Center"
+            Grid.Column="2" 
+            Grid.ColumnSpan="2" 
+            FontSize="24"
+            Margin="68.667,10,14,0">
+
+        </TextBox>
+
+        <Button x:ConnectionId='14'
+            x:Name="calculate"
+            Content="Calculate"
+            Grid.Row="10" 
+            Margin="10,3,0,42"                         Height="65" Width="118"
+            
+            ></Button>
+        <Button x:ConnectionId='15' x:Name="back" Content="Go Back" HorizontalAlignment="Left" Margin="20,2,0,0" Grid.RowSpan="2" VerticalAlignment="Top"                    />
+
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="AdvComProject.Feedback"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AdvComProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <TextBlock   Text="feedback" Margin="10,10,-11,8.833" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Foreground="#FF009DDC"/>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.167,0,0">
+            <TextBox x:Name="emailbox" Header="Your email" HorizontalAlignment="Left" Margin="0,-15,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="70" Width="362"/>
+            <TextBox x:Name="feedbox" Header="Your feedback" HorizontalAlignment="Left" Margin="0,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="312" Width="362"/>
+            <Button Content="Rate us at Microsoft Windows Store!" HorizontalAlignment="Left" Margin="10,426,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.512,0.117" Width="331" Click="Button_Click"/>
+
+        </Grid>
+        <Button x:Name="sendbutton"  Content="Send" HorizontalAlignment="Left" Margin="261,381.833,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Click="sendbutton_Click"/>
+        <Button x:Name="back_button" Content="Back" HorizontalAlignment="Left" Margin="272,29,0,0" VerticalAlignment="Top" Click="back_button_Click"/>
+    </Grid>
+</Page>

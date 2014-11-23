@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="AdvComProject.Resource"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AdvComProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/background.png"/>
+    </Page.Background>
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Resources" VerticalAlignment="Top" Height="48" Width="295" FontFamily="Segoe WP Semibold" FontSize="36"/>
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="0,103.333,0,-0.333">
+        <Grid x:Name="resourceGrid">
+            <WebView x:Name="webView" HorizontalAlignment="Left" Height="620" VerticalAlignment="Top" Width="400" Visibility="Collapsed"/>
+            
+            <!--<Grid.RowDefinitions>
+                    <RowDefinition x:Name="row0" Height="auto" />
+                    <RowDefinition />
+                    <RowDefinition x:Name="row1" Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="col0" Width="*" />
+                    <ColumnDefinition x:Name="col2" Width="*" />
+                </Grid.ColumnDefinitions>-->
+            <!--<StackPanel x:Name="stackBook" Grid.Column="0" Grid.Row="0" Margin="10,20,10,0">
+                    <StackPanel Background="#adacac" Width="200" Height="300" />
+                    <StackPanel Background="White" Width="200" Height="75" />
+                </StackPanel>-->
+
+        </Grid>
+
+
+    </ScrollViewer>
+        <Button x:ConnectionId='1' x:Name="Go_Back" Content="Go Back" HorizontalAlignment="Left" Margin="266,9,0,0" VerticalAlignment="Top"                   />
+    </Grid>
+</Page>
+

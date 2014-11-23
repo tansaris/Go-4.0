@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TANOPHASWONB80C</Machine>
+    <WindowsUser>Tan</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>b41963f1-49ed-4b41-a81d-c1a73f68e55a</PackageIdentityName>
+    <IntermediateOutputPath>\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\obj\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\AdvComProject.exe">
+      <PackagePath>AdvComProject.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\App icon\appIcon_106.png">
+      <PackagePath>Assets\App icon\appIcon_106.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\App icon\appIcon_120.png">
+      <PackagePath>Assets\App icon\appIcon_120.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\App icon\appIcon_170.png">
+      <PackagePath>Assets\App icon\appIcon_170.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\App icon\appIcon_360.png">
+      <PackagePath>Assets\App icon\appIcon_360.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\background.png">
+      <PackagePath>Assets\background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\Circle.png">
+      <PackagePath>Assets\Circle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\groupStudyLogo.png">
+      <PackagePath>Assets\groupStudyLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\logo_forLogin.png">
+      <PackagePath>Assets\logo_forLogin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\map_icon.png">
+      <PackagePath>Assets\map_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\HubBackground.theme-dark.png">
+      <PackagePath>Assets\HubBackground.theme-dark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\HubBackground.theme-light.png">
+      <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\resource_icon.png">
+      <PackagePath>Assets\resource_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\widePoster.png">
+      <PackagePath>Assets\widePoster.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\G_icon.png">
+      <PackagePath>Assets\G_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\clock_face.jpg">
+      <PackagePath>Assets\clock_face.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\lamp1.jpg">
+      <PackagePath>Assets\lamp1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Assets\gameover.wav">
+      <PackagePath>Assets\gameover.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\Camera.xbf">
+      <PackagePath>Camera.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\ContactUs.xbf">
+      <PackagePath>ContactUs.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\Feedback.xbf">
+      <PackagePath>Feedback.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\GradeCal.xbf">
+      <PackagePath>GradeCal.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\Gyro.xbf">
+      <PackagePath>Gyro.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\Login.xbf">
+      <PackagePath>Login.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\Map.xbf">
+      <PackagePath>Map.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\MapOrResource.xbf">
+      <PackagePath>MapOrResource.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\Resource.xbf">
+      <PackagePath>Resource.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\SectionPage.xbf">
+      <PackagePath>SectionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\SignUp.xbf">
+      <PackagePath>SignUp.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\ToDoList.xbf">
+      <PackagePath>ToDoList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\AdvComProject.xr.xml">
+      <PackagePath>AdvComProject.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="\\psf\home\documents\visual studio 2013\Projects\AdvComProject\AdvComProject\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

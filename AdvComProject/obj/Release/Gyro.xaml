@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="AdvComProject.Gyro"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AdvComProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="0,0.333,0,-0.333" Height="640" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="145" Margin="83,109,0,0" VerticalAlignment="Top" Width="246" Source="Assets/lamp1.jpg"/>
+
+
+        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" Margin="0,231,0,82" Grid.ColumnSpan="2">
+            <Grid x:Name="ClockXaml" Width="300" Height="300" Margin="50,27,50,0">
+
+                <!---->  
+          
+    			<!---->
+
+                <!---->  
+                  <Image x:Name="image1" HorizontalAlignment="Left" Height="300" Margin="6,0,-6,0" VerticalAlignment="Top" Width="300" Source="Assets/clock_face.jpg"/>
+
+    			<!-- Second  -->
+                <Rectangle Margin="150,0,149,150" x:Name="rectangleSecond"   
+    				Stroke="Yellow" Height="120" VerticalAlignment="Bottom">
+                    <Rectangle.RenderTransform>
+                        <RotateTransform x:Name="secondHand" CenterX="0"   
+    						CenterY="120" Angle="0" />
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+
+                <!-- Minute  -->
+                <Rectangle Margin="150,49,149,151" x:Name="rectangleMinute"   
+    				Stroke="LightGreen">
+                    <Rectangle.RenderTransform>
+                        <RotateTransform x:Name="minuteHand" CenterX="0"   
+    						CenterY="100" Angle="0" />
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <!-- Hour  -->
+                <Rectangle Margin="150,80,149,150" x:Name="rectangleHour"   
+    				Stroke="Red">
+                    <Rectangle.RenderTransform>
+                        <RotateTransform x:Name="hourHand" CenterX="0"   
+    						CenterY="70" Angle="0" />
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+
+
+            </Grid>
+        </Grid>
+
+
+        <Button x:ConnectionId='1' x:Name="buttonStart" Content="Start" HorizontalAlignment="Left" Margin="17,566,0,0" VerticalAlignment="Top"                           Height="58" Width="109"/>
+        <Button x:ConnectionId='2' x:Name="buttonStop" Content="Go Back" HorizontalAlignment="Left" Margin="65.167,566,0,0" VerticalAlignment="Top"                          Grid.Column="1" Height="58" Width="109"/>
+
+        <TextBlock x:Name="lblTimer" HorizontalAlignment="Center" Margin="7,361,6,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="124" Width="387" FontSize="24" TextAlignment="Center" Foreground="Red" Grid.ColumnSpan="2" FontFamily="Segoe WP Semibold"/>
+        <TextBlock x:Name="Textblock2" HorizontalAlignment="Left" Margin="10,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="57" Width="319" FontSize="50" Grid.ColumnSpan="2"/>
+
+        <TextBlock x:Name="Textblock3" HorizontalAlignment="Left" Margin="0,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="400" FontSize="20" TextAlignment="Center" Foreground="#FFEDEDED" SelectionHighlightColor="Yellow" Grid.ColumnSpan="2">
+    		<Run/>
+    		<LineBreak/>
+    		<Run/>
+        </TextBlock>
+        <TextBlock x:Name="Notice1" HorizontalAlignment="Left" Margin="7,305,0,0" TextWrapping="Wrap" Text="Please place your device on flat surface" VerticalAlignment="Top" RenderTransformOrigin="-0.488,0.889" Width="393" FontSize="20" Foreground="#FFFAFA00" Grid.ColumnSpan="2" Height="24" TextAlignment="Center"/>
+        <TextBlock x:Name="Notice2" HorizontalAlignment="Left" Margin="70,355,0,0" TextWrapping="Wrap" Text="Press Start to begin Read Mode" VerticalAlignment="Top" FontSize="20" Foreground="#FF25A8DE" Grid.ColumnSpan="2" Height="33" Width="278" FontFamily="Segoe WP SemiLight"/>
+
+
+        <MediaElement x:Name="sound" HorizontalAlignment="Left" Height="100" Margin="70,462,0,0" VerticalAlignment="Top" Width="100" Source="Assets/gameover.wav" AutoPlay="False"/>
+        <TextBlock x:Name="Textblock4" HorizontalAlignment="Left" Margin="6,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="384" FontSize="20" TextAlignment="Center" Foreground="#FFEDEDED" SelectionHighlightColor="Yellow" Grid.ColumnSpan="2" FontFamily="Segoe WP Semibold">
+    		<Run/>
+    		<LineBreak/>
+    		<Run/>
+        </TextBlock>
+        <TextBlock x:Name="QuoteBlock" HorizontalAlignment="Left" Margin="10,427,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="131" Width="380" TextAlignment="Center" FontSize="18" Grid.ColumnSpan="2"/>
+        <TextBlock Text="readmode" Margin="7,0,12,565" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Foreground="#FF25A8DE" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="recordBlock" HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="RECORDBLOCK" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2" Height="24" Width="355" Foreground="#FFFBD604"/>
+    </Grid>
+</Page>
+

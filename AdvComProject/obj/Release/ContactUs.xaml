@@ -1,0 +1,49 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AdvComProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="AdvComProject.ContactUs"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="contact us" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" Foreground="#FF009DDC"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid x:Name="ContentRoot" Margin="19,118,19,21" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+
+            <Maps:MapControl x:Name="locmap"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="379" Width="400" Grid.ColumnSpan="2" Margin="-19,-49,-19.333,0" MapServiceToken="5cnlhVutiT33_nad9UysKA"/>
+            <Slider x:ConnectionId='3' x:Name="slider1" Header="Map Zoom"
+				Maximum="20" 
+				Minimum="10"
+				                                   
+				Margin="-4,335,-0.333,76"
+                />
+
+
+        </Grid>
+        <Button x:ConnectionId='1' x:Name="companyPositionButton" Content="We are here" HorizontalAlignment="Left" Margin="207,456.667,0,0" VerticalAlignment="Top"                                     Grid.Row="1"/>
+        <Button x:ConnectionId='2' x:Name="back_button" Content="Back" HorizontalAlignment="Left" Margin="60,456.667,0,0" VerticalAlignment="Top"                           Grid.Row="1"/>
+    </Grid>
+</Page>
+
